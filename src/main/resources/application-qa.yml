@@ -1,0 +1,4 @@
+twilio:
+  account_sid: #QA sid
+  auth_token: #QA Token
+  trial_number: #QA From Number
