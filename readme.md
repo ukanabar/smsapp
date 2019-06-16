@@ -37,6 +37,7 @@ Example: Authorization : Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzbXNhcHB1c2VyIiw
 3.Run app on docker:
 
 docker build -t smsapp:latest .
+
 docker run -d -v /tmp:/tmp -p 9090:8080  --name cpassapi smsapp
 
 
