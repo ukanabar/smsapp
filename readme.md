@@ -27,7 +27,9 @@ Sample Response
 "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzbXNhcHB1c2VyIiwiZXhwIjoxNTYwNzE5MzAzLCJpYXQiOjE1NjA3MDEzMDN9.OnYNCo0GpQycXoFN1l1jJf639YVdHenq5E4E5DdXyDXX_EjIVK-l02S4mk0iU5cdH3frVWecrF7DfPngAQF1mg"
 }
 
-Now to sent an sms or call an api specify Authorization Header on Swagger,Postman or Advanced Rest Client
+Now to send an sms or call an api specify Authorization Header on Swagger,Postman or Advanced Rest Client
+
+Example: Authorization : Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzbXNhcHB1c2VyIiwiZXhwIjoxNTYwNzE5MzAzLCJpYXQiOjE1NjA3MDEzMDN9.OnYNCo0GpQycXoFN1l1jJf639YVdHenq5E4E5DdXyDXX_EjIVK-l02S4mk0iU5cdH3frVWecrF7DfPngAQF1mg
 
 
 	OR
