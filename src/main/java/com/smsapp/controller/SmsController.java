@@ -18,6 +18,7 @@ import com.smsapp.bean.SmsRequest;
 import com.smsapp.exceptions.BadRequestException;
 import com.smsapp.exceptions.SmsException;
 import com.smsapp.service.SmsService;
+import com.twilio.rest.api.v2010.account.Message;
 
 @RestController
 public class SmsController {
@@ -31,9 +32,9 @@ public class SmsController {
 }
 	
 	@RequestMapping(method = RequestMethod.POST, value = "/api/sendsms")
-	public void sendSms(@Valid @RequestBody SmsRequest smsRequest) throws SmsException, BadRequestException{
+	public String sendSms(@Valid @RequestBody SmsRequest smsRequest) throws SmsException, BadRequestException{
 		try {
-	        service.sendSms(smsRequest);
+	        return service.sendSms(smsRequest);
 		} catch (BadRequestException e) {
 			throw e;
 		}catch (SmsException e) {

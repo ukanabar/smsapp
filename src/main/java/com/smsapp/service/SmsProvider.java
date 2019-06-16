@@ -9,7 +9,7 @@ import com.smsapp.exceptions.SmsException;
 
 public interface SmsProvider {
 
-    void sendSms(SmsRequest smsRequest) throws BadRequestException, SmsException;
+	String sendSms(SmsRequest smsRequest) throws BadRequestException, SmsException;
     List<SmsMessage> receiveSms(String phoneNumber) throws BadRequestException, SmsException;
     
 }

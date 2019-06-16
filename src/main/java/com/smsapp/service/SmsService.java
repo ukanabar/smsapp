@@ -21,8 +21,8 @@ public class SmsService {
         this.smsProvider = provider;
     }
 
-    public void sendSms(SmsRequest smsRequest) throws BadRequestException, SmsException {
-        smsProvider.sendSms(smsRequest);
+    public String sendSms(SmsRequest smsRequest) throws BadRequestException, SmsException {
+        return smsProvider.sendSms(smsRequest);
     }
     
     public List<SmsMessage> receiveSms(String phoneNumber) throws BadRequestException, SmsException {

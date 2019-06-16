@@ -34,15 +34,16 @@ public class TwilioSmsProvider implements SmsProvider {
     }
 
     @Override
-    public void sendSms(SmsRequest smsRequest) throws BadRequestException, SmsException {
+    public String sendSms(SmsRequest smsRequest) throws BadRequestException, SmsException {
 	    	try {
 	    		if (isPhoneNumberValid(smsRequest.getPhoneNumber())) {
 		            PhoneNumber to = new PhoneNumber(smsRequest.getPhoneNumber());
 		            PhoneNumber from = new PhoneNumber(twilioConfiguration.getTrialNumber());
 		            String message = smsRequest.getMessage();
 		            MessageCreator creator = Message.creator(to, from, message);
-		            creator.create();
+		            Message sentMessage = creator.create();		            
 		            LOGGER.info("Send sms {}", smsRequest);
+		            return sentMessage.getStatus().toString();
 		        } else {
 		           throw new BadRequestException("Bad Request"); 
 		        }

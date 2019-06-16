@@ -1,3 +1,16 @@
 spring:
   profiles:
     active: dev
+
+swagger:
+    title : SMS API End Points
+    description: Provides API for Rest Service
+    version : 1
+    termsOfServiceUrl: urlforribbion terms of service
+    contact:
+      name: test name
+      url: test url
+      email: test email
+    license: test license
+    licenseUrl: license url
+
