@@ -1,6 +1,6 @@
-1.Clone git repo
+1.Clone git repo. Sign up for twilio account and update your details in application-dev.yml.
 
-2.Go to project root directory
+2.Go to project root directory.
 
 3.Run using simple java command:
 
